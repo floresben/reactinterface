@@ -1,4 +1,4 @@
-import { BiSearch, BiCaretDown } from "react-icons/bi"
+import { BiSearch, BiCaretDown, BiCheck } from "react-icons/bi"
 
 const DropDown = () => {
     return (
