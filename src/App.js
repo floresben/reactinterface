@@ -1,4 +1,4 @@
-import {BiArchive} from "react-icon/bi";
+import { BiArchive } from "react-icons/bi";
 
 function App() {
   return (
