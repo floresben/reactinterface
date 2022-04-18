@@ -1,7 +1,7 @@
 import { BiCalendar, BiTrash } from "react-icons/bi"
 import Search from "./components/Search"
 import AddAppointment from "./components/AddAppointment";
-import appointmentList from ".data.json";
+import appointmentList from "./data.json";
 
 function App() {
   return (
