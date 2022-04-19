@@ -12,9 +12,9 @@ function App() {
   const filteredAppointments = appointmentList.filter(
     item => {
       return(
-        item.petName.toLowerCase().includes(query.toLocaleUpperCase()) ||
-        item.ownerName.toLowerCase().includes(query.toLocaleUpperCase()) ||
-        item.aptNotes.toLowerCase().includes(query.toLocaleUpperCase())
+        item.petName.toLowerCase().includes(query.toLowerCase()) ||
+        item.ownerName.toLowerCase().includes(query.toLowerCase()) ||
+        item.aptNotes.toLowerCase().includes(query.toLowerCase())
       )
     }
   )
