@@ -11,7 +11,7 @@ function App() {
   let [sortBy, setSortBy] = useState("petName");
   let [orderBy, setOrderBy] = useState("asc");
 
-  const filteredAppointments = appointmentList.filter(
+  const filteredAppointments = [...appointmentList.filter(
     item => {
       return (
         item.petName.toLowerCase().includes(query.toLowerCase()) ||
@@ -25,7 +25,7 @@ function App() {
       a[sortBy].toLowerCase() < b[sortBy].toLowerCase()
         ? -1 * order : 1 * order
     )
-  })
+  })]
 
   const fetchData = useCallback(() => {
     fetch('./data.json')
